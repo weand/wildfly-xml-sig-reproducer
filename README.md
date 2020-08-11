@@ -75,10 +75,3 @@ Expected: Expected text value '0FCBFaURtUN+0kxupRbO3pp93rPY+9d1bf7ffAw77lQ=' but
 
 
 Again the digest with enveloped-signature transform algorithm works properly when downgrading saaj-impl to 1.3.x in WFLY18+.
-
-
-Can anybody create a JIRA for the proper component ?
-
-
-Thanks 
-Andreas
