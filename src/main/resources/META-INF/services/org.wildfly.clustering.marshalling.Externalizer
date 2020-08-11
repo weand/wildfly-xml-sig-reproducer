@@ -1,0 +1,15 @@
+com.github.weand.wildfly.iafm.externalizer.AddFunctionExternalizerAdapter
+com.github.weand.wildfly.iafm.externalizer.CompareAndSwapFunctionExternalizerAdapter
+com.github.weand.wildfly.iafm.externalizer.ConfigurationMetadataExternalizerAdapter
+com.github.weand.wildfly.iafm.externalizer.CounterConfigurationExternalizerAdapter
+com.github.weand.wildfly.iafm.externalizer.CounterKeyFilterExternalizerAdapter
+com.github.weand.wildfly.iafm.externalizer.CounterStateExternalizerAdapter
+com.github.weand.wildfly.iafm.externalizer.CounterValueExternalizerAdapter
+com.github.weand.wildfly.iafm.externalizer.CreateAndAddFunctionExternalizerAdapter
+com.github.weand.wildfly.iafm.externalizer.CreateAndCASFunctionExternalizerAdapter
+com.github.weand.wildfly.iafm.externalizer.InitializeCounterFunctionExternalizerAdapter
+com.github.weand.wildfly.iafm.externalizer.ReadFunctionExternalizerAdapter
+com.github.weand.wildfly.iafm.externalizer.RemoveFunctionExternalizerAdapter
+com.github.weand.wildfly.iafm.externalizer.ResetFunctionExternalizerAdapter
+com.github.weand.wildfly.iafm.externalizer.StrongCounterKeyExternalizerAdapter
+com.github.weand.wildfly.iafm.externalizer.WeakCounterKeyExternalizerAdapter
