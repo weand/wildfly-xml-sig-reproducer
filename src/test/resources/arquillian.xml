@@ -18,6 +18,7 @@
                     -Djboss.socket.binding.port-offset=0
                     -Djava.net.preferIPv4Stack=true
                     -Darquillian.debug=false
+                    -Dcom.sun.org.apache.xml.internal.security.ignoreLineBreaks=true
                 </property>
             </configuration>
         </container>

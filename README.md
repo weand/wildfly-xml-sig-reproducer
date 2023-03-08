@@ -1,5 +1,7 @@
 # wildfly-xml-sig-reproducer
 
+### NOTE: Issue seems fixed with latest WFLY26
+
 After upgrading to WFY20 we are facing a regression regarding WS-Security that was introduced with Upgrade of com.sun.xml.messaging.saaj:saaj-impl in https://issues.redhat.com/browse/WFLY-12442 with WFLY18. When downgrading com.sun.xml.messaging.saaj:saaj-impl to 1.3.x the regression is fixed also in WFLY18+. We did not locate the root cause in saaj-impl 1.4+.
 
 The Bug was spotted within our signing algorithm used for our SOAP Web Services (which uses javax.xml.crypto.dsig Packages).
@@ -8,7 +10,6 @@ The Bug can be reproduced easily via https://github.com/weand/wildfly-xml-sig-re
 
 
 Reproducer contains a Web Service implementation which uses XML Signature and more specifically the enveloped-signature transform algorithm (https://www.w3.org/TR/xmldsig-core1/#sec-EnvelopedSignature). This standard transform algorithm basically removes the whole Signature element from the digest calculation. And thats not stable since WFLY18 as the Signature element is not removed anymore! The repo also contains an arquillian test testing the SOAP webservice response using rest-assured.
-
 
 ## Run good scenario: Test on WFLY17 
 
